@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/styles.css?v=1.1">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>TCCS.TECH</title>
+</head>
+
+<body>
+    <main id="home">
+        <canvas id="gradient-canvas"></canvas>
+        <!-- top nav -->
+        <div class="section nav">
+            <div class="container">
+                <nav>
+                    <div class="brand">
+                        <h3>TCCS.TECH</h3>
+                    </div>
+                    <ul class="navbar">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#projects">My Work</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link contact-btn">Contact Us</a>
+                    </ul>
+                    <div class="hamburger">
+                        <div id="line-1" class="line "></div>
+                        <div id="line-2" class="line"></div>
+                        <div id="line-3" class="line "></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- hero section -->
+        <div id="hero" class="section hero">
+            <div class="container">
+                <div class="two-col">
+                    <div class="col">
+                        <h1>All your development needs in one place</h1>
+                    </div>
+                    <div class="col">
+                        <img src="./static/images/code.png" alt="code">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- frameworks -->
+        <div class="section frameworks">
+            <div class="container">
+                <h2>Frameworks / Libraries</h2>
+                <div class="framework-icons">
+                    <div id="spring-icon" class="icon">
+                        <img src="./static/images/spring.png" alt="spring">
+                    </div>
+                    <div id="django-icon" class="icon">
+                        <img src="./static/images/django.jpg" alt="django">
+                    </div>
+                    <div id="flask-icon" class="icon">
+                        <img src="./static/images/flask.png" alt="flask">
+                    </div>
+                    <div id="react-icon" class="icon">
+                        <img src="./static/images/react.png" alt="react">
+                    </div>
+                    <div id="express-icon" class="icon">
+                        <img src="./static/images/express.png" alt="express">
+                    </div>
+                    <div id="nodejs-icon" class="icon">
+                        <img src="./static/images/nodejs.png" alt="nodejs">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- examples -->
+        <div id="projects" class="section projects">
+            <div class="container">
+                <h2>Project Examples</h2>
+                <div class="two-col">
+                    <div class="col">
+                        <a href="https://swipe.tccs.tech" target="_blank">
+                            <div class="image-container">
+                                <img src="./static/images/swipe.png" alt="">
+                            </div>
+                        </a>
+                        <p class="sub-text">Responsive Website Design</p>
+                    </div>
+
+                    <div class="col">
+                        <h3>Other Projects</h3>
+                        <ul class="other-services">
+                            <li>Letter Automation for local government</li>
+                            <li>Contract and Billing System for local government</li>
+                            <li>Web Scraper to find unregistered breeders for local government</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>One Stop Shop</h3>
+                    <h5>Tccs.Tech handles anything from letter automation to website design and everything in between.
+                        Our
+                        commitment is to strive to meet all of our customers' needs.</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing -->
+        <div id="pricing" class="section pricing">
+            <div class="container">
+                <h2>Pricing</h2>
+
+                <h3>Since we offer a variety of services, and every customer's needs are different, our pricing varies
+                    by project. Please use the <a class="contact-btn" >contact us</a> link to request a quote or inquire about more
+                    information. </h3>
+            </div>
+        </div>
+        <!-- contact form -->
+        <div id="contact-form" class="container">
+            <form action="/" method="post">
+                <div class="form-cont">                   
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-cont">                   
+                    <input type="text" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-cont last">                    
+                   <textarea name="message" id="message"rows="8" required></textarea>
+                   <label for="message">Message</label>
+                </div>
+                <div class="">                   
+                    <button type="submit">Submit</button>
+                </div>
+                <button type="button" class="close-btn">X</button>
+            </form>
+        </div>
+
+        <!-- footer -->
+        <footer></footer>
+    </main>
+
+    <script src="./static/js/gradient.js"></script>
+    <script src="./static/js/index.js"></script>
+</body>
+
+</html>
