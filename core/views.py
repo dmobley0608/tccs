@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.core.mail import send_mail
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import render_to_string
@@ -32,6 +32,6 @@ def contact_us(request):
             msg.send()
             send_mail("New Request",request.POST['message'],'no-reply@email.tccs.tech', ['dmobley0608@gmail.com'])         
                   
-            return render(request,'homepage.html')
+            return redirect('homepage')
         print(request.POST)        
     return render(request, 'contact-us.html', {'form':form})
