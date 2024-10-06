@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     'localhost'
     ]
 
-
+CSRF_TRUSTED_ORIGINS=['https://tccs.tech']
 # Application definition
 
 INSTALLED_APPS = [
