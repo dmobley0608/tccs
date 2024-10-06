@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+{% load static %}
+{%block styles%}
+
+{%endblock%}
+{% block title %}
+  TCCS.TECH
+{% endblock %}
+
+
+ 
+{% block content %}
+<canvas id="gradient-canvas" width="1014" height="600" class="isLoaded"></canvas>
+    <div id="hero" class="section hero">      
+      <div class="container">
+        <div class="two-col">
+          <div class="col">
+            <h1>All your development needs in one place</h1>
+          </div>
+          <div class="col">
+            <img src="./static/images/code.png" alt="code" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section frameworks">
+      <div class="container">
+        <h2>Frameworks / Libraries</h2>
+        <div class="framework-icons">
+          <div id="spring-icon" class="icon">
+            <img src="./static/images/springboot.png" alt="spring boot" />
+          </div>
+          <div id="django-icon" class="icon">
+            <img src="./static/images/django.png" alt="django" />
+          </div>
+          <div id="flask-icon" class="icon">
+            <img src="./static/images/flask.png" alt="flask" />
+          </div>
+          <div id="react-icon" class="icon">
+            <img src="./static/images/react.png" alt="react" />
+          </div>
+          <div id="express-icon" class="icon">
+           <h4><strong>Express-js</strong></h4>
+          </div>
+          <div id="nodejs-icon" class="icon">
+            <img src="./static/images/nodejs.png" alt="nodejs" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="section projects">
+      <div class="container">
+        <h2>Project Examples</h2>
+        <div class="two-col">
+          <div class="col">
+            <a href="https://swipe.tccs.tech" target="_blank">
+              <div class="image-container">
+                <img src="./static/images/swipe.png" alt="" />
+              </div>
+            </a>
+            <p class="sub-text">Responsive Website Design</p>
+          </div>
+          <div class="col">
+            <h3>Other Projects</h3>
+            <ul class="other-services">
+              <li>Letter Automation for local government</li>
+              <li>Contract and Billing System for local government</li>
+              <li>Web Scraper to find unregistered breeders for local government</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>One Stop Shop</h3>
+          <h5>Tccs.Tech is a digital agency that offers full-service solutions for any project, from website design to letter automation and everything in between. Our commitment is to strive to meet all our clients' needs, big or small. We will work with you to understand your requirements, and then create a plan that meets your budget and timeframe.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div id="pricing" class="section pricing">
+      <div class="container">
+        <h2>Pricing</h2>
+        <h3>We offer a wide range of services to meet the unique requirements of our clients. Our solutions are tailored to each client's specific needs, and our pricing reflects that. We pride ourselves on our ability to provide quality services at a competitive price. For more information or a quote, please <a href="contact-us" alt="contact-us">contact us</a>. We look forward to working with you.</h3>
+      </div>
+    </div>
+
+   
+{% endblock %}
+
+{% block scripts %}
+
+ 
+  <script src="{% static 'js/homepage.js' %}"></script>
+{% endblock %}

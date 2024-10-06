@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{%block styles%}
+<link rel="stylesheet" href="{% static 'css/contact-us.css' %}">
+{%endblock%}
+    {%block title%}Contact Us{% endblock %}
+    {%block content%}
+   
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-5 card p-5 m-1">
+            <div class="card-body my-auto">
+                <h6 class="lh-lg text-light">Thank you for considering us for your service needs. We look forward to working with you. Please fill out this form and submit it to get started. We will review your information and contact you as soon as possible. We are eager to answer your questions and provide a quote.</h6>
+            </div>
+        </div>
+        <div class="card p-3 col-12 col-md-6 mx-1">
+            <h2 class="text-light" >Contact Us</h2>
+            <form class="" action="{% url 'contact-us'%}" method="post">         
+                {% csrf_token %}
+                <div class="form-floating mb-3">
+                    {{form.errors.name}}
+                    <input type="text" class="form-control" id="name" name='name' placeholder="John Doe">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    {{form.errors.email}}
+                    <input type="text" class="form-control" id="email" name='email' placeholder="jdoe@email.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    {{form.errors.phone_number}}
+                    <input type="tel" class="form-control" id="phone_number" name='phone_number' placeholder="1234567890">
+                    <label for="floatingInput">Phone Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    {{form.errors.message}}
+                    <textarea title="message" class="form-control" name='message' style="height: 200px;"></textarea>
+                    <label for="floatingInput">Message</label>
+                </div>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+ 
+{% endblock %}
+{% block scripts%}
+<script src="{% static 'js/homepage.js' %}"></script>
+{%endblock%}

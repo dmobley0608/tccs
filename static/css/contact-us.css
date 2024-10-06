@@ -1,0 +1,22 @@
+body{
+    background: rgb(56,54,90);
+    background: linear-gradient(9deg, rgba(56,54,90,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.395);
+    z-index: -1;
+}
+
+.card-body h6{
+    text-shadow: 1px 1px 1px black;
+   font-size: 1.25em;
+   font-weight: bold;
+   letter-spacing: 3px;
+}
