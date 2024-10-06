@@ -1,1 +1,1 @@
-web: gunicorn TCCS.wsgi.py
+web: gunicorn core.wsgi.py
