@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-s&2yltk_94sta3dnmv0b#@ztukh1(poz5q%7@o^z+8=gw5y#r%
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'tccs.tech',
     'tccs-c181e4702e7d.herokuapp.com',
     'localhost'
     ]
