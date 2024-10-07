@@ -364,6 +364,7 @@ main {
         background-color: #258a8d;
         border-radius: var(--border-radius);
         flex-wrap: nowrap;
+        z-index: 1080;
     }
 
     .navbar .nav-link {
