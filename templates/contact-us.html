@@ -16,21 +16,21 @@
         </div>
         <div class="card p-3 col-12 col-md-6 mx-1">
             <h2 class="text-light" >Contact Us</h2>
-            <form class="" action="{% url 'contact-us'%}" method="post">         
+            <form  action="{% url 'contact-us'%}" method="post">         
                 {% csrf_token %}
                 <div class="form-floating mb-3">
                     {{form.errors.name}}
-                    <input type="text" class="form-control" id="name" name='name' placeholder="John Doe">
+                    <input type="text" class="form-control" id="name" name='name' >
                     <label for="floatingInput">Name</label>
                 </div>
                 <div class="form-floating mb-3">
                     {{form.errors.email}}
-                    <input type="text" class="form-control" id="email" name='email' placeholder="jdoe@email.com">
+                    <input type="text" class="form-control" id="email" name='email' >
                     <label for="floatingInput">Email</label>
                 </div>
                 <div class="form-floating mb-3">
                     {{form.errors.phone_number}}
-                    <input type="tel" class="form-control" id="phone_number" name='phone_number' placeholder="1234567890">
+                    <input type="tel" class="form-control" id="phone_number" name='phone_number'>
                     <label for="floatingInput">Phone Number</label>
                 </div>
                 <div class="form-floating mb-3">
@@ -46,5 +46,5 @@
  
 {% endblock %}
 {% block scripts%}
-<script src="{% static 'js/homepage.js' %}"></script>
+
 {%endblock%}
