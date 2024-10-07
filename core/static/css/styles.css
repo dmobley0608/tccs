@@ -272,10 +272,11 @@ main {
 }
 .frameworks::after {
     content: '';
-    height: 550px;
+    height: 1000px;
     width: 100vw;
     background-color:#008f13;
-    position: absolute;    
+    position: absolute;  
+    top:0;
     left: 0;
     z-index: -1;
     padding-bottom: var(--spacing-xl);
